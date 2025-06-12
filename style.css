@@ -1,0 +1,212 @@
+
+.h3{
+  margin-top: 0px;
+  margin-bottom: 500px;
+  
+}
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 255, 255);
+    padding-top: 300px;
+    font-size: 70px;
+    text-decoration: none;
+    text-align: center;
+   
+   
+}
+ .ime2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   margin-top: -10px;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: none;
+    margin-bottom: 400px;
+     color: rgb(255, 255, 255);
+}
+
+
+
+
+
+.ime {
+    color: rgb(255, 255, 255);
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+    
+}
+
+
+
+/* Početak sekcija */
+
+
+.mm{
+   position: absolute;
+   left: 0;
+  margin-top: -30px;
+   padding: 40px;
+   font-size: 40px;
+   font-family:Georgia, Times, 'Times New Roman', serif,bold;
+   color: rgb(255, 255, 255);
+}
+
+.pocetak {
+    background-color: #e0e0e0;
+    padding: 20px 350px 20px 350px ; /* dovoljno prostora da se vidi ispod navbar */
+    text-align: center;
+    
+    background-image: url(pozadina5.jpg);
+    background-size: cover;
+}
+
+
+
+
+/* Zamotaj sve tri u grid */
+.liste-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding: 80px 40px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(11, 30, 56, 0.455));
+  text-align: center;
+}
+
+/* Sve liste iste klase mogu izgledati kao kartice */
+.lista1, .lista2, .lista3 {
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+}
+
+.lista1 h2, .lista2 h2, .lista3 h2 {
+  color: rgb(218, 91, 91);
+  margin-bottom: 20px;
+  font-family: Cambria, serif;
+}
+
+
+
+
+
+/* Glavni sadržaj */
+.sadrzaj {
+    padding: 100px;
+   background-image: linear-gradient( rgba(255, 255, 255, 0.559), rgba(57, 57, 57, 0.53));
+    margin-top: 0px;
+    background-color: rgba(136, 136, 136, 0.562);
+}
+
+/* O meni */
+.sadrzaj h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+.sadrzaj p{
+    margin: 0 250px 0 250px;
+    margin-bottom: 50px;
+}
+
+/*liste*/
+
+.lista1 , .lista2 , .lista3 {
+    text-align: center;  /* Centriraj tekst i liste */
+    margin: 0 auto;      /* Automatski centriraj container ako želiš */
+    max-width: 600px;    /* Opcionalno ograniči širinu za bolji izgled */
+    padding: 20px;       /* Dodaj malo prostora unutar div-a */
+
+
+}
+
+
+
+/* Zajednički stil za sve radove */
+.radovi {
+  padding: 70px 40px;
+  margin: 50px auto;
+  max-width: 1200px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Različite pozadine za svaku sekciju */
+.fotografije {
+  background-color: #1a2a44;
+}
+
+.media-duo {
+  background-color: #23334e;
+}
+
+.audio {
+  background-color: #2b3b5e;
+}
+
+.radovi h2 {
+  text-align: center;
+  color: #ffa726;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+/* Galerija slika */
+.galerija {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galerija img {
+  width: 560px;
+  height: 200px;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+.galerija img:hover {
+  transform: scale(1.05);
+}
+
+/* GIF i VIDEO poredani */
+.media-duo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+}
+
+.media-item {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.media-item h2 {
+  margin-bottom: 20px;
+  color: #4dd0e1;
+  font-size: 1.5rem;
+}
+
+.gif {
+  width: 360px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+/* Audio sekcija */
+.audio audio {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
